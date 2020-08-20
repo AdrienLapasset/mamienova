@@ -4,4 +4,29 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  .a-gagner {
+    margin-top: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 34px;
+    line-height: 35px;
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    transform: rotate(-2deg);
+  }
+  .cures-de-choc {
+    color: #6a2505;
+    font-size: 45px;
+    font-weight: 900;
+    text-transform: uppercase;
+    span {
+      font-weight: 900;
+      font-size: 35px;
+    }
+  }
 }
