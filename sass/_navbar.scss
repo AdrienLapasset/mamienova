@@ -7,6 +7,9 @@
       align-items: center;
       .nav-item {
         width: 150px;
+        &.empty {
+          margin: 0 150px;
+        }
         .nav-link {
           color: white;
           text-transform: uppercase;

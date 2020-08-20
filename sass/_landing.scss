@@ -6,6 +6,9 @@
   height: 100vh;
   display: flex;
   justify-content: center;
+  & > * {
+    flex: 0 0 33%;
+  }
 
   .a-gagner {
     margin-top: 20px;
@@ -21,12 +24,12 @@
   }
   .cures-de-choc {
     color: #6a2505;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 900;
     text-transform: uppercase;
     span {
       font-weight: 900;
-      font-size: 35px;
+      font-size: 30px;
     }
   }
 }
