@@ -1,0 +1,19 @@
+.navbar {
+  position: absolute;
+  width: 100%;
+  .navbar-collapse {
+    justify-content: center;
+    .navbar-nav {
+      align-items: center;
+      .nav-item {
+        width: 150px;
+        .nav-link {
+          color: white;
+          text-transform: uppercase;
+          font-size: 15px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

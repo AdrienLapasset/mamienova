@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap");
+* {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+}
+
+html {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.bloc-central {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 500px;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 120px 15px;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+}
+
+.navbar .navbar-collapse {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar .navbar-collapse .navbar-nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item {
+  width: 150px;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: center;
+}
+
+.landing {
+  background-image: url("/assets/imgs/bg-marron.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+/*# sourceMappingURL=style.css.map */

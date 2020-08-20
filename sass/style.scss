@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap");
+
+* {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+}
+
+html {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.bloc-central {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  background-color: rgba($color: white, $alpha: 0.4);
+  padding: 120px 15px;
+}
+
+@import "navbar";
+@import "landing";
