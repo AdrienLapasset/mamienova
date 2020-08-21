@@ -284,11 +284,11 @@ a:hover {
   text-align: center;
 }
 
-.explications .etapes > * {
+.explications__etapes > * {
   margin-bottom: 30px;
 }
 
-.explications .etapes .numero {
+.explications__etapes__numero {
   background-color: #f9bc16;
   height: 37px;
   width: 37px;
@@ -308,7 +308,7 @@ a:hover {
   font-weight: 900;
 }
 
-.explications .etapes p {
+.explications__etapes p {
   color: #562a1c;
   font-size: 25px;
   text-align: center;

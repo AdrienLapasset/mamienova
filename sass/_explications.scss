@@ -8,11 +8,11 @@
     text-transform: uppercase;
     text-align: center;
   }
-  .etapes {
+  &__etapes {
     & > * {
       margin-bottom: 30px;
     }
-    .numero {
+    &__numero {
       background-color: $yellow;
       height: 37px;
       width: 37px;
