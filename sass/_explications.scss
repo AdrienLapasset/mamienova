@@ -1,0 +1,35 @@
+.explications {
+  .craquer {
+    margin: 50px 0;
+    color: #d64b4d;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .etapes {
+    & > * {
+      margin-bottom: 30px;
+    }
+    .numero {
+      background-color: $yellow;
+      height: 37px;
+      width: 37px;
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      margin-right: 10px;
+      font-size: 25px;
+      font-weight: 900;
+    }
+    p {
+      color: #562a1c;
+      font-size: 25px;
+      text-align: center;
+      line-height: 1.2;
+    }
+  }
+}

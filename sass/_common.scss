@@ -6,11 +6,11 @@
   overflow-y: scroll;
   @media (min-width: 992px) {
     background-color: rgba($color: white, $alpha: 0.4);
-    flex: 0 0 510px;
+    flex: 0 0 450px;
   }
   .logo-mamienova {
     max-width: 100%;
-    margin-bottom: 20px;
+    margin: 15px 0;
   }
 }
 

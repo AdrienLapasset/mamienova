@@ -46,14 +46,14 @@ a:hover {
   .bloc-central {
     background-color: rgba(255, 255, 255, 0.4);
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 510px;
-            flex: 0 0 510px;
+        -ms-flex: 0 0 450px;
+            flex: 0 0 450px;
   }
 }
 
 .bloc-central .logo-mamienova {
   max-width: 100%;
-  margin-bottom: 20px;
+  margin: 15px 0;
 }
 
 .btn-primary {
@@ -141,6 +141,7 @@ a:hover {
 
 .navbar {
   width: 100%;
+  margin-top: 20px;
 }
 
 .navbar .navbar-collapse {
@@ -156,11 +157,23 @@ a:hover {
 }
 
 .navbar .navbar-collapse .navbar-nav .nav-item {
-  width: 150px;
+  width: 110px;
+}
+
+@media (min-width: 1200px) {
+  .navbar .navbar-collapse .navbar-nav .nav-item {
+    width: 150px;
+  }
 }
 
 .navbar .navbar-collapse .navbar-nav .nav-item.empty {
-  margin: 0 150px;
+  margin: 0 180px;
+}
+
+@media (min-width: 1200px) {
+  .navbar .navbar-collapse .navbar-nav .nav-item.empty {
+    margin: 0 160px;
+  }
 }
 
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
@@ -200,5 +213,46 @@ a:hover {
 .landing .cures-de-choc span {
   font-weight: 900;
   font-size: 30px;
+}
+
+.explications .craquer {
+  margin: 50px 0;
+  color: #d64b4d;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.explications .etapes > * {
+  margin-bottom: 30px;
+}
+
+.explications .etapes .numero {
+  background-color: #f9bc16;
+  height: 37px;
+  width: 37px;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  margin-right: 10px;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.explications .etapes p {
+  color: #562a1c;
+  font-size: 25px;
+  text-align: center;
+  line-height: 1.2;
 }
 /*# sourceMappingURL=style.css.map */

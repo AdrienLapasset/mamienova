@@ -1,13 +1,20 @@
 .navbar {
   width: 100%;
+  margin-top: 20px;
   .navbar-collapse {
     justify-content: center;
     .navbar-nav {
       align-items: center;
       .nav-item {
-        width: 150px;
+        width: 110px;
+        @media (min-width: 1200px) {
+          width: 150px;
+        }
         &.empty {
-          margin: 0 150px;
+          margin: 0 180px;
+          @media (min-width: 1200px) {
+            margin: 0 160px;
+          }
         }
         .nav-link {
           color: white;
