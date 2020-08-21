@@ -76,3 +76,47 @@
     justify-content: center;
   }
 }
+
+.etapes {
+  display: flex;
+  margin: 30px 0;
+  align-items: center;
+  .numero {
+    position: relative;
+    background-color: $yellow;
+    height: 37px;
+    width: 37px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 70px;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 30px;
+        display: block;
+        width: 80px;
+        height: 3px;
+        background-color: $yellow;
+      }
+    }
+    span {
+      opacity: 0.5;
+      color: white;
+      font-size: 25px;
+      font-weight: 900;
+    }
+    &.active {
+      height: 50px;
+      width: 50px;
+      margin-right: 60px;
+      span {
+        opacity: 1;
+        font-size: 35px;
+      }
+    }
+  }
+}

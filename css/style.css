@@ -139,6 +139,65 @@ a:hover {
   }
 }
 
+.etapes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.etapes .numero {
+  position: relative;
+  background-color: #f9bc16;
+  height: 37px;
+  width: 37px;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.etapes .numero:not(:last-child) {
+  margin-right: 70px;
+}
+
+.etapes .numero:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 30px;
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #f9bc16;
+}
+
+.etapes .numero span {
+  opacity: 0.5;
+  color: white;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.etapes .numero.active {
+  height: 50px;
+  width: 50px;
+  margin-right: 60px;
+}
+
+.etapes .numero.active span {
+  opacity: 1;
+  font-size: 35px;
+}
+
 .navbar {
   width: 100%;
   margin-top: 20px;
@@ -254,5 +313,11 @@ a:hover {
   font-size: 25px;
   text-align: center;
   line-height: 1.2;
+}
+
+.choix .choco-mood {
+  text-align: center;
+  color: #562a1c;
+  font-size: 18px;
 }
 /*# sourceMappingURL=style.css.map */
