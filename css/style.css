@@ -130,11 +130,12 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 @media (min-width: 992px) {
   .layout {
+    height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
