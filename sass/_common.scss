@@ -6,7 +6,6 @@
   overflow-y: scroll;
   @media (min-width: 992px) {
     background-color: rgba($color: white, $alpha: 0.4);
-    // max-width: 510px;
     flex: 0 0 510px;
   }
   .logo-mamienova {
@@ -44,26 +43,21 @@
 }
 
 .img-bg {
+  position: relative;
+  z-index: 1;
+  background-image: url("/assets/imgs/bg-marron-gauche.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  min-height: 100vh;
   display: none;
-  margin-top: auto;
+  margin-top: 100px;
   flex: 1 1 50%;
-  &:first-child {
-    text-align: right;
-    img {
-      position: relative;
-      right: -20px;
-      bottom: 20px;
-      max-width: 100%;
-    }
-  }
+
   &:last-child {
-    img {
-      position: relative;
-      bottom: 0;
-      left: -20px;
-      max-width: 100%;
-      max-height: 600px;
-    }
+    background-image: url("/assets/imgs/bg-marron-droite.png");
+    background-position-y: bottom;
+    margin-top: 150px;
   }
   @media (min-width: 992px) {
     display: block;

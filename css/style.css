@@ -93,30 +93,24 @@ a:hover {
 }
 
 .img-bg {
+  position: relative;
+  z-index: 1;
+  background-image: url("/assets/imgs/bg-marron-gauche.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  min-height: 100vh;
   display: none;
-  margin-top: auto;
+  margin-top: 100px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
 }
 
-.img-bg:first-child {
-  text-align: right;
-}
-
-.img-bg:first-child img {
-  position: relative;
-  right: -20px;
-  bottom: 20px;
-  max-width: 100%;
-}
-
-.img-bg:last-child img {
-  position: relative;
-  bottom: 0;
-  left: -20px;
-  max-width: 100%;
-  max-height: 600px;
+.img-bg:last-child {
+  background-image: url("/assets/imgs/bg-marron-droite.png");
+  background-position-y: bottom;
+  margin-top: 150px;
 }
 
 @media (min-width: 992px) {
