@@ -1,5 +1,4 @@
 .navbar {
-  position: absolute;
   width: 100%;
   .navbar-collapse {
     justify-content: center;
@@ -18,5 +17,8 @@
         }
       }
     }
+  }
+  @media (min-width: 992px) {
+    position: absolute;
   }
 }

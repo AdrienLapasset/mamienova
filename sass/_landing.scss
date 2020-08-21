@@ -1,15 +1,4 @@
 .landing {
-  background-image: url("/assets/imgs/bg-marron.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  & > * {
-    flex: 0 0 33%;
-  }
-
   .a-gagner {
     margin-top: 20px;
     font-weight: 900;
