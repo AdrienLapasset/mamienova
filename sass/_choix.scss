@@ -4,4 +4,32 @@
     color: $brown;
     font-size: 18px;
   }
+  .pastille {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+    img {
+      width: 175px;
+      border-radius: 1000px;
+      box-sizing: content-box;
+      border: 4px solid transparent;
+    }
+    input:checked ~ img {
+      border-color: white;
+    }
+  }
 }

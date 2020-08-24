@@ -310,4 +310,47 @@ a:hover {
   color: #562a1c;
   font-size: 18px;
 }
+
+.choix .pastille {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.choix .pastille input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.choix .pastille img {
+  width: 175px;
+  border-radius: 1000px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border: 4px solid transparent;
+}
+
+.choix .pastille input:checked ~ img {
+  border-color: white;
+}
 /*# sourceMappingURL=style.css.map */
