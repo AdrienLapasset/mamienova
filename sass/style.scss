@@ -10,13 +10,6 @@ html {
   font-family: "Nunito Sans", sans-serif;
 }
 
-body {
-  width: 100%;
-  @media (min-width: 992px) {
-    overflow: hidden;
-  }
-}
-
 a {
   color: white;
   &:hover {

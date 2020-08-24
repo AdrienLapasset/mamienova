@@ -53,6 +53,7 @@
   display: none;
   margin-top: 100px;
   flex: 1 1 50%;
+  max-width: 600px;
 
   &:last-child {
     background-image: url("/assets/imgs/bg-marron-droite.png");
@@ -71,7 +72,6 @@
   background-position: center;
   min-height: 100vh;
   @media (min-width: 992px) {
-    height: 100vh;
     display: flex;
     justify-content: center;
   }
