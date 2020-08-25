@@ -353,4 +353,43 @@ a:hover {
 .choix .pastille input:checked ~ img {
   border-color: white;
 }
+
+.choix-1 h1 {
+  text-align: center;
+  color: #562a1c;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: initial;
+}
+
+.choix-1 .explications {
+  margin-top: 20px;
+  color: #562a1c;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.choix-1 .normal {
+  padding: 10px 15px;
+  color: white;
+  background-color: #572d57;
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.choix-1 .img-bg {
+  background-image: url("/assets/imgs/bg-violet-gauche.png");
+}
+
+.choix-1 .img-bg:last-child {
+  background-image: url("/assets/imgs/bg-violet-droite.png");
+}
+
+.choix-1.layout {
+  background-image: url("/assets/imgs/bg-violet.jpg");
+}
 /*# sourceMappingURL=style.css.map */
