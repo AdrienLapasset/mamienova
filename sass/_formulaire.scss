@@ -1,12 +1,7 @@
 .formulaire {
-  .img-bg {
-    &.right {
-      left: unset;
-      right: 0;
-      bottom: 0;
-    }
+  &.layout {
+    background-image: url("/assets/imgs/bg-marron-choco.jpg");
   }
-
   form {
     width: 100%;
   }

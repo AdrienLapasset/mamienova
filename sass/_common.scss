@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 15px 20px;
+  padding: 0px 20px 20px;
   @media (min-width: 992px) {
     background-color: rgba($color: white, $alpha: 0.4);
     flex: 0 0 450px;
@@ -17,12 +17,13 @@
 .img-bg {
   position: absolute;
   &.left {
-    right: 420px;
+    right: 430px;
     top: 100px;
   }
   &.right {
     left: 420px;
     bottom: 0;
+    max-height: 90vh;
   }
 }
 
@@ -64,30 +65,8 @@
   }
 }
 
-// .img-bg {
-//   position: absolute;
-//   z-index: 1;
-//   background-image: url("/assets/imgs/bg-marron-gauche.png");
-//   background-repeat: no-repeat;
-//   background-size: contain;
-//   background-position: top;
-//   min-height: 100vh;
-//   display: none;
-//   margin-top: 100px;
-//   flex: 1 1 50%;
-//   max-width: 600px;
-
-//   &:last-child {
-//     background-image: url("/assets/imgs/bg-marron-droite.png");
-//     background-position-y: bottom;
-//     margin-top: 150px;
-//   }
-//   @media (min-width: 992px) {
-//     display: block;
-//   }
-// }
-
 .layout {
+  overflow: hidden;
   background-image: url("/assets/imgs/bg-marron.jpg");
   background-repeat: no-repeat;
   background-size: cover;
