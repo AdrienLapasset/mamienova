@@ -17,6 +17,7 @@ a:hover {
 }
 
 .bloc-central {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,7 +29,6 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   padding: 0px 15px 20px;
-  overflow-y: scroll;
 }
 
 @media (min-width: 992px) {
@@ -43,6 +43,20 @@ a:hover {
 .bloc-central .logo-mamienova {
   max-width: 100%;
   margin: 15px 0;
+}
+
+.bloc-central .img-bg {
+  position: absolute;
+}
+
+.bloc-central .img-bg.left {
+  right: 420px;
+  top: 100px;
+}
+
+.bloc-central .img-bg.right {
+  left: 420px;
+  bottom: 0;
 }
 
 .btn-primary {
@@ -79,34 +93,6 @@ a:hover {
   font-weight: 900;
   font-size: 9px;
   letter-spacing: initial;
-}
-
-.img-bg {
-  position: relative;
-  z-index: 1;
-  background-image: url("/assets/imgs/bg-marron-gauche.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top;
-  min-height: 100vh;
-  display: none;
-  margin-top: 100px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
-  max-width: 600px;
-}
-
-.img-bg:last-child {
-  background-image: url("/assets/imgs/bg-marron-droite.png");
-  background-position-y: bottom;
-  margin-top: 150px;
-}
-
-@media (min-width: 992px) {
-  .img-bg {
-    display: block;
-  }
 }
 
 .layout {
@@ -379,24 +365,14 @@ a:hover {
   text-align: center;
 }
 
-.choix-1 .img-bg {
-  background-image: url("/assets/imgs/bg-violet-gauche.png");
-}
-
-.choix-1 .img-bg:last-child {
-  background-image: url("/assets/imgs/bg-violet-droite.png");
-}
-
 .choix-1.layout {
   background-image: url("/assets/imgs/bg-violet.jpg");
 }
 
-.formulaire .img-bg {
-  background-image: url("/assets/imgs/bg-marron-gauche-2.png");
-}
-
-.formulaire .img-bg:last-child {
-  background-image: url("/assets/imgs/bg-marron-droite-2.png");
+.formulaire .bloc-central .img-bg.right {
+  left: unset;
+  right: 0;
+  bottom: 0;
 }
 
 .formulaire form {

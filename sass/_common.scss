@@ -1,9 +1,9 @@
 .bloc-central {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px 15px 20px;
-  overflow-y: scroll;
   @media (min-width: 992px) {
     background-color: rgba($color: white, $alpha: 0.4);
     flex: 0 0 450px;
@@ -11,6 +11,17 @@
   .logo-mamienova {
     max-width: 100%;
     margin: 15px 0;
+  }
+  .img-bg {
+    position: absolute;
+    &.left {
+      right: 420px;
+      top: 100px;
+    }
+    &.right {
+      left: 420px;
+      bottom: 0;
+    }
   }
 }
 
@@ -42,28 +53,28 @@
   }
 }
 
-.img-bg {
-  position: relative;
-  z-index: 1;
-  background-image: url("/assets/imgs/bg-marron-gauche.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top;
-  min-height: 100vh;
-  display: none;
-  margin-top: 100px;
-  flex: 1 1 50%;
-  max-width: 600px;
+// .img-bg {
+//   position: absolute;
+//   z-index: 1;
+//   background-image: url("/assets/imgs/bg-marron-gauche.png");
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   background-position: top;
+//   min-height: 100vh;
+//   display: none;
+//   margin-top: 100px;
+//   flex: 1 1 50%;
+//   max-width: 600px;
 
-  &:last-child {
-    background-image: url("/assets/imgs/bg-marron-droite.png");
-    background-position-y: bottom;
-    margin-top: 150px;
-  }
-  @media (min-width: 992px) {
-    display: block;
-  }
-}
+//   &:last-child {
+//     background-image: url("/assets/imgs/bg-marron-droite.png");
+//     background-position-y: bottom;
+//     margin-top: 150px;
+//   }
+//   @media (min-width: 992px) {
+//     display: block;
+//   }
+// }
 
 .layout {
   background-image: url("/assets/imgs/bg-marron.jpg");

@@ -1,8 +1,11 @@
 .formulaire {
-  .img-bg {
-    background-image: url("/assets/imgs/bg-marron-gauche-2.png");
-    &:last-child {
-      background-image: url("/assets/imgs/bg-marron-droite-2.png");
+  .bloc-central {
+    .img-bg {
+      &.right {
+        left: unset;
+        right: 0;
+        bottom: 0;
+      }
     }
   }
   form {
