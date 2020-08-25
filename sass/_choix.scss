@@ -31,6 +31,9 @@
     input:checked ~ img {
       border-color: white;
     }
+    &:hover img {
+      border: 4px solid white;
+    }
   }
 }
 

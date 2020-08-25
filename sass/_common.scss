@@ -26,19 +26,29 @@
   }
 }
 
-.btn-primary {
-  width: 300px;
-  background-color: #f9bc16;
+.btn {
   border: none;
-  text-transform: uppercase;
-  font-weight: 900;
   border-radius: 100px;
+  text-transform: uppercase;
   font-size: 30px;
+  font-weight: 900;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0px 3px rgba(0, 0, 0, 0.75);
+  &.btn-primary {
+    width: 300px;
+    background-color: #f9bc16;
+  }
+
+  &.btn-secondary {
+    background-color: #b10808;
+    font-size: 20px;
+  }
+  img {
+    margin: 0 10px;
+  }
 }
 
 .footer {
