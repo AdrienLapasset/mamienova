@@ -73,40 +73,40 @@
         <div class="sexe d-flex align-items-center mb-3">
           <label class="radio">
             Mr.
-            <input type="radio" name="genre">
+            <input type="radio" name="genre" required>
             <span class="checkmark"></span>
           </label>
           <label class="radio mr-3">
             Mme.
-            <input type="radio" name="genre">
+            <input type="radio" name="genre" required>
             <span class="checkmark"></span>
           </label>
-          <input placeholder="Nom" type="text" id="lastname" name="lastname">
+          <input placeholder="Nom" type="text" id="lastname" name="lastname" required>
         </div>
 
         <div class="d-flex mb-3">
-          <input class="mr-2" placeholder="Prénom" type="text" id="firstname" name="firstname">
-          <input class="ml-2" placeholder="Téléphone" type="tel" id="tel" name="tel">
+          <input class="mr-2" placeholder="Prénom" type="text" id="firstname" name="firstname" required>
+          <input class="ml-2" placeholder="Téléphone" type="tel" id="tel" name="tel" required>
         </div>
 
         <div class="d-flex mb-3">
-          <input placeholder="Adresse postale" type="text" id="adress" name="adress">
+          <input placeholder="Adresse postale" type="text" id="adress" name="adress" required>
         </div>
 
         <div class="d-flex mb-3">
-          <input class="mr-2" placeholder="Code postal" type="text" id="Codepostal" name="Codepostal">
-          <input class="ml-2" placeholder="Ville" type="text" id="Ville" name="Ville">
+          <input class="mr-2" placeholder="Code postal" type="text" id="Codepostal" name="Codepostal" required>
+          <input class="ml-2" placeholder="Ville" type="text" id="Ville" name="Ville" required>
         </div>
 
         <div class="d-flex mb-3">
-          <input placeholder="Adresse email" type="email" id="email" name="email">
+          <input placeholder="Adresse email" type="email" id="email" name="email" required>
         </div>
 
-        <p class="codes-texte">Quels sont les codes inscrits
+        <p class="codes-texte">Quels sont les codes inscrits<br>
           aux versos de vos packs ?</p>
 
         <div class="mb-2">
-          <input class="codes" type="text" id="code1" name="code1" maxlength="7">
+          <input class="codes" type="text" id="code1" name="code1" maxlength="7" required>
           <div class="dotted-line">
             <span></span>
             <span></span>
@@ -119,7 +119,7 @@
         </div>
 
         <div class="mb-4">
-          <input class="codes" type="text" id="code1" name="code1" maxlength="7">
+          <input class="codes" type="text" id="code1" name="code1" maxlength="7" required>
           <div class="dotted-line">
             <span></span>
             <span></span>
@@ -133,17 +133,17 @@
 
         <div class="conditions">
           <label class="radio">
-            <input type="radio" name="genre">
+            <input type="checkbox" name="conditions générales" required>
             <span class="checkmark"></span>
             En cochant cette case, vous acceptez les conditions générales d’utilisations.
           </label>
           <label class="radio">
-            <input type="radio" name="genre">
+            <input type="checkbox" name="réglement" required>
             <span class="checkmark"></span>
             En cochant cette case, vous acceptez le réglement du jeu.
           </label>
           <label class="radio">
-            <input type="radio" name="genre">
+            <input type="checkbox" name="offres">
             <span class="checkmark"></span>
             Je souhaite recevoir des offres et être abonné(e) aux dernières
             nouveautés Mamie Nova
@@ -152,7 +152,7 @@
 
       </form>
 
-      <a href="explications.html" class="btn btn-primary">Valider</a>
+      <a href="explications.html" class="btn btn-primary mt-2">Valider</a>
       <div class="footer">
         <a href="" class="mr-3">Mentions Légales</a>
         <a href="">Politique de protection des données personnelles</a>

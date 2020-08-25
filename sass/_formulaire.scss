@@ -39,12 +39,13 @@
       justify-content: center;
       align-items: center;
       &::after {
+        position: absolute;
         content: "";
         display: block;
         width: 10px;
         height: 10px;
         border-radius: 10px;
-        background-color: black;
+        background-color: $brown;
         display: none;
       }
     }
@@ -53,6 +54,7 @@
     }
   }
   input {
+    box-sizing: content-box;
     padding: 0 15px;
     width: 100%;
     height: 30px;
@@ -69,6 +71,9 @@
       font-size: 20px;
       padding-left: 94px;
       letter-spacing: 25px;
+    }
+    &::placeholder {
+      color: rgba($color: $brown, $alpha: 0.5);
     }
   }
   .dotted-line {
@@ -89,7 +94,9 @@
   .codes-texte {
     text-align: center;
     color: $brown;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 30px;
   }
   .conditions {
     color: black;
@@ -97,8 +104,17 @@
     flex-direction: column;
     align-items: center;
     .radio {
-      font-size: 12px;
+      font-size: 11px;
       margin-bottom: 10px;
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+      align-items: flex-start;
+      .checkmark {
+        position: relative;
+        bottom: 2px;
+        margin: 0 5px 0 0;
+      }
     }
   }
 }
