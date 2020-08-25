@@ -45,16 +45,16 @@ a:hover {
   margin: 15px 0;
 }
 
-.bloc-central .img-bg {
+.img-bg {
   position: absolute;
 }
 
-.bloc-central .img-bg.left {
+.img-bg.left {
   right: 420px;
   top: 100px;
 }
 
-.bloc-central .img-bg.right {
+.img-bg.right {
   left: 420px;
   bottom: 0;
 }
@@ -369,7 +369,7 @@ a:hover {
   background-image: url("/assets/imgs/bg-violet.jpg");
 }
 
-.formulaire .bloc-central .img-bg.right {
+.formulaire .img-bg.right {
   left: unset;
   right: 0;
   bottom: 0;
@@ -465,6 +465,8 @@ a:hover {
   font-size: 20px;
   padding-left: 94px;
   letter-spacing: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .formulaire input::-webkit-input-placeholder {

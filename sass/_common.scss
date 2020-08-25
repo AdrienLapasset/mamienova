@@ -12,16 +12,17 @@
     max-width: 100%;
     margin: 15px 0;
   }
-  .img-bg {
-    position: absolute;
-    &.left {
-      right: 420px;
-      top: 100px;
-    }
-    &.right {
-      left: 420px;
-      bottom: 0;
-    }
+}
+
+.img-bg {
+  position: absolute;
+  &.left {
+    right: 420px;
+    top: 100px;
+  }
+  &.right {
+    left: 420px;
+    bottom: 0;
   }
 }
 

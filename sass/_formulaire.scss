@@ -1,13 +1,12 @@
 .formulaire {
-  .bloc-central {
-    .img-bg {
-      &.right {
-        left: unset;
-        right: 0;
-        bottom: 0;
-      }
+  .img-bg {
+    &.right {
+      left: unset;
+      right: 0;
+      bottom: 0;
     }
   }
+
   form {
     width: 100%;
   }
@@ -74,6 +73,7 @@
       font-size: 20px;
       padding-left: 94px;
       letter-spacing: 25px;
+      box-sizing: border-box;
     }
     &::placeholder {
       color: rgba($color: $brown, $alpha: 0.5);
