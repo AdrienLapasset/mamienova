@@ -1,0 +1,104 @@
+.formulaire {
+  .img-bg {
+    background-image: url("/assets/imgs/bg-marron-gauche-2.png");
+    &:last-child {
+      background-image: url("/assets/imgs/bg-marron-droite-2.png");
+    }
+  }
+  form {
+    width: 100%;
+  }
+  .sexe {
+    .radio {
+      width: 130px;
+    }
+  }
+  .radio {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    cursor: pointer;
+    user-select: none;
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+    .checkmark {
+      margin: 0 10px;
+      flex: 0 0 20px;
+      height: 20px;
+      background-color: white;
+      border-radius: 20px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &::after {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        background-color: black;
+        display: none;
+      }
+    }
+    input:checked ~ .checkmark:after {
+      display: block;
+    }
+  }
+  input {
+    padding: 0 15px;
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background: rgba($color: white, $alpha: 0.5);
+    &:focus {
+      outline: none;
+    }
+    &.codes {
+      border: none;
+      border-radius: 10px;
+      height: 45px;
+      font-size: 20px;
+      padding-left: 94px;
+      letter-spacing: 25px;
+    }
+  }
+  .dotted-line {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 12px;
+    span {
+      display: block;
+      height: 2px;
+      width: 30px;
+      background-color: black;
+      &:not(:last-child) {
+        margin-right: 7px;
+      }
+    }
+  }
+  .codes-texte {
+    text-align: center;
+    color: $brown;
+    font-size: 18px;
+  }
+  .conditions {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .radio {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+  }
+}

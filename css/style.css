@@ -2,7 +2,6 @@
 * {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
-  letter-spacing: -1px;
 }
 
 html {
@@ -165,7 +164,7 @@ a:hover {
   position: absolute;
   left: 30px;
   display: block;
-  width: 80px;
+  width: 100px;
   height: 3px;
   background-color: #f9bc16;
 }
@@ -180,7 +179,6 @@ a:hover {
 .etapes .numero.active {
   height: 50px;
   width: 50px;
-  margin-right: 60px;
 }
 
 .etapes .numero.active span {
@@ -391,5 +389,149 @@ a:hover {
 
 .choix-1.layout {
   background-image: url("/assets/imgs/bg-violet.jpg");
+}
+
+.formulaire .img-bg {
+  background-image: url("/assets/imgs/bg-marron-gauche-2.png");
+}
+
+.formulaire .img-bg:last-child {
+  background-image: url("/assets/imgs/bg-marron-droite-2.png");
+}
+
+.formulaire form {
+  width: 100%;
+}
+
+.formulaire .sexe .radio {
+  width: 130px;
+}
+
+.formulaire .radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.formulaire .radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.formulaire .radio .checkmark {
+  margin: 0 10px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20px;
+          flex: 0 0 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formulaire .radio .checkmark::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: black;
+  display: none;
+}
+
+.formulaire .radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.formulaire input {
+  padding: 0 15px;
+  width: 100%;
+  height: 30px;
+  border-radius: 20px;
+  border: 2px solid black;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.formulaire input:focus {
+  outline: none;
+}
+
+.formulaire input.codes {
+  border: none;
+  border-radius: 10px;
+  height: 45px;
+  font-size: 20px;
+  padding-left: 94px;
+  letter-spacing: 25px;
+}
+
+.formulaire .dotted-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  bottom: 12px;
+}
+
+.formulaire .dotted-line span {
+  display: block;
+  height: 2px;
+  width: 30px;
+  background-color: black;
+}
+
+.formulaire .dotted-line span:not(:last-child) {
+  margin-right: 7px;
+}
+
+.formulaire .codes-texte {
+  text-align: center;
+  color: #562a1c;
+  font-size: 18px;
+}
+
+.formulaire .conditions {
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formulaire .conditions .radio {
+  font-size: 12px;
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=style.css.map */
