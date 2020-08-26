@@ -2,7 +2,7 @@
   .craquer {
     margin: 50px 0;
     color: #d64b4d;
-    font-size: 30px;
+    font-size: 32px;
     line-height: 30px;
     font-weight: 800;
     text-transform: uppercase;
@@ -30,6 +30,24 @@
       font-size: 25px;
       text-align: center;
       line-height: 1.2;
+      &.small {
+        font-size: 18px;
+      }
     }
+  }
+  .un-duo-de-cadeaux {
+    color: $brown;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 1.1;
+  }
+  .a-hauteur {
+    color: white;
+    margin: 30px 0 10px 0;
+    font-size: 11px;
+  }
+  .footer {
+    margin-top: 0px;
   }
 }
