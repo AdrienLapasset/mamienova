@@ -94,7 +94,7 @@
     color: $brown;
     font-size: 20px;
     font-weight: 700;
-    margin-top: 30px;
+    margin: 30px 0 10px;
   }
   .conditions {
     color: black;
@@ -114,5 +114,18 @@
         margin: 0 5px 0 0;
       }
     }
+  }
+  .tips {
+    background-color: $brown;
+    color: white;
+    width: 17px;
+    height: 17px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 11px;
+    position: relative;
+    bottom: 4px;
+    left: 5px;
+    padding-top: 1px;
   }
 }

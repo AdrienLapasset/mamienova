@@ -13,5 +13,7 @@ $(document).ready(function () {
     // viewportMax: true,
   });
 
+  $('[data-toggle="tooltip"]').tooltip()
+
 })
 
