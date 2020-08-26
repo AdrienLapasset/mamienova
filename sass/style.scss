@@ -17,6 +17,10 @@ a {
   }
 }
 
+p {
+  margin: 0;
+}
+
 @import "colors";
 @import "common";
 @import "navbar";

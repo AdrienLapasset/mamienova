@@ -50,4 +50,27 @@
   .footer {
     margin-top: 0px;
   }
+  .tns-outer {
+    transform: translateX(-20px);
+  }
+  .slider {
+    width: 226px;
+  }
+  .slider-controls {
+    position: relative;
+    img {
+      cursor: pointer;
+      position: absolute;
+      bottom: 70px;
+      &:first-child {
+        left: -50px;
+      }
+      &:last-child {
+        right: -50px;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
 }
