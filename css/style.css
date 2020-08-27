@@ -247,12 +247,6 @@ p {
   margin: 0 180px;
 }
 
-@media (min-width: 1200px) {
-  .navbar .navbar-collapse .navbar-nav .nav-item.empty {
-    margin: 0 160px;
-  }
-}
-
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: white;
   text-transform: uppercase;

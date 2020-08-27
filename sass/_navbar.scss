@@ -23,9 +23,6 @@
         }
         &.empty {
           margin: 0 180px;
-          @media (min-width: 1200px) {
-            margin: 0 160px;
-          }
         }
         .nav-link {
           color: white;
