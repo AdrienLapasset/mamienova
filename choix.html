@@ -70,29 +70,31 @@
       <p class="choco-mood"><b>Quel est votre choco-mood aujourd’hui&nbsp;?
         </b><br>
         Pour ne pas toucher le fond,<br>finissez bien celui du pot.</p>
-      <div class="d-flex flex-wrap justify-content-around">
-        <label class="pastille">
-          <input type="radio" checked="checked" name="choco-mood">
-          <img src="/assets/imgs/choco-bsessionel.png" alt="">
-          Choco-bsessionel(le)
-        </label>
-        <label class="pastille">
-          <input type="radio" name="choco-mood">
-          <img src="/assets/imgs/choco-stresse.png" alt="">
-          Choco-stressé(e)
-        </label>
-        <label class="pastille">
-          <input type="radio" name="choco-mood">
-          <img src="/assets/imgs/schyzo-choco.png" alt="">
-          Schyzo-Choco
-        </label>
-        <label class="pastille">
-          <input type="radio" name="choco-mood">
-          <img src="/assets/imgs/choco-solo.png" alt="">
-          Choco-Solo
-        </label>
-      </div>
-      <a href="/choix-1.html" class="btn btn-primary mt-3">Suivant</a>
+      <form id="choco-moods">
+        <div class="d-flex flex-wrap justify-content-around">
+          <label class="pastille">
+            <input type="radio" name="choco-mood" value="choix-1">
+            <img src="/assets/imgs/choco-bsessionel.png" alt="">
+            Choco-bsessionel(le)
+          </label>
+          <label class="pastille">
+            <input type="radio" name="choco-mood" value="choix-3">
+            <img src="/assets/imgs/choco-stresse.png" alt="">
+            Choco-stressé(e)
+          </label>
+          <label class="pastille">
+            <input type="radio" name="choco-mood" value="choix-2">
+            <img src="/assets/imgs/schyzo-choco.png" alt="">
+            Schyzo-Choco
+          </label>
+          <label class="pastille">
+            <input type="radio" name="choco-mood" value="choix-4">
+            <img src="/assets/imgs/choco-solo.png" alt="">
+            Choco-Solo
+          </label>
+        </div>
+        <button type="submit" href="/choix-1.html" class="btn btn-primary mt-3 mx-auto">Suivant</button>
+      </form>
       <div class="footer">
         <a href="" class="mr-3">Mentions Légales</a>
         <a href="">Politique de protection des données personnelles</a>
@@ -108,5 +110,6 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="js.js"></script>
 
 </html>
