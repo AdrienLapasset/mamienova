@@ -435,7 +435,7 @@ p {
   padding: 10px 15px;
   color: white;
   background-color: #572d57;
-  margin-top: 10px;
+  margin: 10px 0 20px;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
@@ -443,6 +443,30 @@ p {
 
 .choix-1.layout {
   background-image: url("/assets/imgs/bg-violet.jpg");
+}
+
+.choix-2.layout {
+  background-image: url("/assets/imgs/bg-choix-2.jpg");
+}
+
+.choix-2 .normal {
+  background-color: #7b1206;
+}
+
+.choix-3.layout {
+  background-image: url("/assets/imgs/bg-choix-3.jpg");
+}
+
+.choix-3 .normal {
+  background-color: #2e5a45;
+}
+
+.choix-4.layout {
+  background-image: url("/assets/imgs/bg-choix-4.jpg");
+}
+
+.choix-4 .normal {
+  background-color: #b15323;
 }
 
 .formulaire.layout {

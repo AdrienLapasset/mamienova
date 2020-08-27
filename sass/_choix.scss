@@ -57,12 +57,39 @@
     padding: 10px 15px;
     color: white;
     background-color: $purple;
-    margin-top: 10px;
+    margin: 10px 0 20px;
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
   }
   &.layout {
     background-image: url("/assets/imgs/bg-violet.jpg");
+  }
+}
+
+.choix-2 {
+  &.layout {
+    background-image: url("/assets/imgs/bg-choix-2.jpg");
+  }
+  .normal {
+    background-color: #7b1206;
+  }
+}
+
+.choix-3 {
+  &.layout {
+    background-image: url("/assets/imgs/bg-choix-3.jpg");
+  }
+  .normal {
+    background-color: #2e5a45;
+  }
+}
+
+.choix-4 {
+  &.layout {
+    background-image: url("/assets/imgs/bg-choix-4.jpg");
+  }
+  .normal {
+    background-color: #b15323;
   }
 }
