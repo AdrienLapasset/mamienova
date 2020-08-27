@@ -516,6 +516,16 @@ p {
 
 .formulaire form {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .formulaire .sexe {
@@ -526,7 +536,13 @@ p {
 }
 
 .formulaire .sexe .radio {
-  width: 130px;
+  width: 72px;
+}
+
+@media (min-width: 576px) {
+  .formulaire .sexe .radio {
+    width: 100px;
+  }
 }
 
 .formulaire .radio {
@@ -554,13 +570,18 @@ p {
 .formulaire .radio .checkmark {
   display: inline-block;
   position: relative;
-  margin: 0 5px;
   top: 5px;
   width: 20px;
   height: 20px;
   background-color: white;
   border-radius: 20px;
   border: 2px solid black;
+}
+
+@media (min-width: 576px) {
+  .formulaire .radio .checkmark {
+    margin: 0 5px;
+  }
 }
 
 .formulaire .radio .checkmark::after {
@@ -584,11 +605,27 @@ p {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   padding: 0 15px;
-  width: 163px;
+  width: 110px;
   height: 30px;
   border-radius: 20px;
   border: 2px solid black;
   background: rgba(255, 255, 255, 0.5);
+}
+
+@media (min-width: 576px) {
+  .formulaire input {
+    width: 163px;
+  }
+}
+
+.formulaire input.long {
+  width: 270px;
+}
+
+@media (min-width: 576px) {
+  .formulaire input.long {
+    width: 375px;
+  }
 }
 
 .formulaire input:focus {
@@ -673,6 +710,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .formulaire .conditions .radio {
