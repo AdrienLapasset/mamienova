@@ -59,6 +59,7 @@
     transform: translateX(30px);
   }
   .slider-controls {
+    display: block !important;
     position: relative;
     width: 100%;
     img {
@@ -67,15 +68,15 @@
       bottom: 70px;
       &:first-child {
         left: 0;
-        @media (min-width: 992px) {
-          left: -50px;
-        }
+        // @media (min-width: 992px) {
+        //   left: -50px;
+        // }
       }
       &:last-child {
         right: 0;
-        @media (min-width: 992px) {
-          right: -50px;
-        }
+        // @media (min-width: 992px) {
+        //   right: -50px;
+        // }
       }
       &:focus {
         outline: none;

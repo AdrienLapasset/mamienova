@@ -6,6 +6,8 @@
     width: 100%;
   }
   .sexe {
+    display: flex;
+    margin-bottom: 20px;
     .radio {
       width: 130px;
     }
@@ -53,7 +55,7 @@
   input {
     box-sizing: content-box;
     padding: 0 15px;
-    width: 100%;
+    width: 163px;
     height: 30px;
     border-radius: 20px;
     border: 2px solid black;
