@@ -1,6 +1,8 @@
 .navbar {
-  width: 100%;
-  margin-top: 20px;
+  z-index: 1;
+  top: 20px;
+  left: 0;
+  right: 0;
   .navbar-toggler {
     border: none;
     &:focus {
@@ -10,7 +12,6 @@
   }
   .navbar-collapse {
     justify-content: center;
-    width: 100%;
     .navbar-nav {
       align-items: center;
       .nav-item {

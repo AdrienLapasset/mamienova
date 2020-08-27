@@ -32,6 +32,9 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   text-align: center;
   padding: 0px 20px 20px;
 }
@@ -201,8 +204,10 @@ p {
 }
 
 .navbar {
-  width: 100%;
-  margin-top: 20px;
+  z-index: 1;
+  top: 20px;
+  left: 0;
+  right: 0;
 }
 
 .navbar .navbar-toggler {
@@ -218,7 +223,6 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
 }
 
 .navbar .navbar-collapse .navbar-nav {
@@ -307,6 +311,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .explications__etapes > * {
@@ -343,6 +348,7 @@ p {
 
 .explications__etapes p.small {
   font-size: 18px;
+  width: 100%;
 }
 
 .explications .un-duo-de-cadeaux {
@@ -462,6 +468,7 @@ p {
   font-size: 18px;
   line-height: 1.2;
   text-align: center;
+  width: 100%;
 }
 
 .choix-1 .normal {
@@ -472,6 +479,7 @@ p {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
+  width: 100%;
 }
 
 .choix-1.layout {
