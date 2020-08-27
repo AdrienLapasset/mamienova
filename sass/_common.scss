@@ -17,6 +17,7 @@
 
 .img-bg {
   position: absolute;
+  display: none;
   &.left {
     right: 430px;
     top: 100px;
@@ -25,6 +26,9 @@
     left: 420px;
     bottom: 0;
     max-height: 90vh;
+  }
+  @media (min-width: 992px) {
+    display: block;
   }
 }
 
@@ -114,11 +118,14 @@
     &.active {
       height: 50px;
       width: 50px;
-      // margin-right: 60px;
       span {
         opacity: 1;
         font-size: 35px;
       }
     }
   }
+}
+
+.help-me-mamie {
+  width: 280px;
 }

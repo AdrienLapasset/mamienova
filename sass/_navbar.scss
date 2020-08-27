@@ -1,14 +1,25 @@
 .navbar {
   width: 100%;
   margin-top: 20px;
+  .navbar-toggler {
+    border: none;
+    &:focus {
+      outline: none;
+      border: none;
+    }
+  }
   .navbar-collapse {
     justify-content: center;
+    width: 100%;
     .navbar-nav {
       align-items: center;
       .nav-item {
-        width: 110px;
+        width: 100%;
         @media (min-width: 1200px) {
           width: 150px;
+        }
+        @media (min-width: 992px) {
+          width: 110px;
         }
         &.empty {
           margin: 0 180px;

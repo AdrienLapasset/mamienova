@@ -9,6 +9,9 @@
     text-align: center;
   }
   &__etapes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     & > * {
       margin-bottom: 30px;
     }
@@ -26,6 +29,7 @@
       font-weight: 900;
     }
     p {
+      margin-top: 4px;
       color: $brown;
       font-size: 25px;
       text-align: center;
@@ -51,22 +55,27 @@
     margin-top: 0px;
   }
   .tns-outer {
-    transform: translateX(-20px);
-  }
-  .slider {
     width: 226px;
+    transform: translateX(30px);
   }
   .slider-controls {
     position: relative;
+    width: 100%;
     img {
       cursor: pointer;
       position: absolute;
       bottom: 70px;
       &:first-child {
-        left: -50px;
+        left: 0;
+        @media (min-width: 992px) {
+          left: -50px;
+        }
       }
       &:last-child {
-        right: -50px;
+        right: 0;
+        @media (min-width: 992px) {
+          right: -50px;
+        }
       }
       &:focus {
         outline: none;

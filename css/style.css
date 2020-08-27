@@ -52,6 +52,7 @@ p {
 
 .img-bg {
   position: absolute;
+  display: none;
 }
 
 .img-bg.left {
@@ -63,6 +64,12 @@ p {
   left: 420px;
   bottom: 0;
   max-height: 90vh;
+}
+
+@media (min-width: 992px) {
+  .img-bg {
+    display: block;
+  }
 }
 
 .btn {
@@ -191,15 +198,29 @@ p {
   font-size: 35px;
 }
 
+.help-me-mamie {
+  width: 280px;
+}
+
 .navbar {
   width: 100%;
   margin-top: 20px;
+}
+
+.navbar .navbar-toggler {
+  border: none;
+}
+
+.navbar .navbar-toggler:focus {
+  outline: none;
+  border: none;
 }
 
 .navbar .navbar-collapse {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
 .navbar .navbar-collapse .navbar-nav {
@@ -209,12 +230,18 @@ p {
 }
 
 .navbar .navbar-collapse .navbar-nav .nav-item {
-  width: 110px;
+  width: 100%;
 }
 
 @media (min-width: 1200px) {
   .navbar .navbar-collapse .navbar-nav .nav-item {
     width: 150px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar .navbar-collapse .navbar-nav .nav-item {
+    width: 110px;
   }
 }
 
@@ -277,6 +304,19 @@ p {
   text-align: center;
 }
 
+.explications__etapes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .explications__etapes > * {
   margin-bottom: 30px;
 }
@@ -302,6 +342,7 @@ p {
 }
 
 .explications__etapes p {
+  margin-top: 4px;
   color: #562a1c;
   font-size: 25px;
   text-align: center;
@@ -331,16 +372,14 @@ p {
 }
 
 .explications .tns-outer {
-  -webkit-transform: translateX(-20px);
-          transform: translateX(-20px);
-}
-
-.explications .slider {
   width: 226px;
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
 }
 
 .explications .slider-controls {
   position: relative;
+  width: 100%;
 }
 
 .explications .slider-controls img {
@@ -350,11 +389,23 @@ p {
 }
 
 .explications .slider-controls img:first-child {
-  left: -50px;
+  left: 0;
+}
+
+@media (min-width: 992px) {
+  .explications .slider-controls img:first-child {
+    left: -50px;
+  }
 }
 
 .explications .slider-controls img:last-child {
-  right: -50px;
+  right: 0;
+}
+
+@media (min-width: 992px) {
+  .explications .slider-controls img:last-child {
+    right: -50px;
+  }
 }
 
 .explications .slider-controls img:focus {
@@ -365,6 +416,7 @@ p {
   text-align: center;
   color: #562a1c;
   font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .choix .pastille {
@@ -507,7 +559,7 @@ p {
 }
 
 .formulaire .radio .checkmark {
-  margin: 0 10px;
+  margin: 0 5px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 20px;
           flex: 0 0 20px;
@@ -557,14 +609,23 @@ p {
 }
 
 .formulaire input.codes {
+  width: 280px;
   border: none;
   border-radius: 10px;
   height: 45px;
   font-size: 20px;
-  padding-left: 94px;
+  padding-left: 21px;
+  padding-right: 0;
   letter-spacing: 25px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media (min-width: 992px) {
+  .formulaire input.codes {
+    width: 410px;
+    padding-left: 90px;
+  }
 }
 
 .formulaire input::-webkit-input-placeholder {

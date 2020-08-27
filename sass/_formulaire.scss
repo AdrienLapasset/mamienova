@@ -26,7 +26,7 @@
       width: 0;
     }
     .checkmark {
-      margin: 0 10px;
+      margin: 0 5px;
       flex: 0 0 20px;
       height: 20px;
       background-color: white;
@@ -62,13 +62,19 @@
       outline: none;
     }
     &.codes {
+      width: 280px;
       border: none;
       border-radius: 10px;
       height: 45px;
       font-size: 20px;
-      padding-left: 94px;
+      padding-left: 21px;
+      padding-right: 0;
       letter-spacing: 25px;
       box-sizing: border-box;
+      @media (min-width: 992px) {
+        width: 410px;
+        padding-left: 90px;
+      }
     }
     &::placeholder {
       color: rgba($color: $brown, $alpha: 0.5);
