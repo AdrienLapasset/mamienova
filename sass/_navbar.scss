@@ -1,8 +1,8 @@
 .navbar {
   z-index: 1;
   top: 20px;
-  left: 0;
-  right: 0;
+  padding: 0;
+  margin-bottom: 10px;
   .navbar-toggler {
     border: none;
     &:focus {
@@ -23,7 +23,9 @@
           width: 110px;
         }
         &.empty {
-          margin: 0 180px;
+          @media (min-width: 992px) {
+            margin: 0 180px;
+          }
         }
         .nav-link {
           color: white;

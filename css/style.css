@@ -111,6 +111,7 @@ p {
   margin-top: 100px;
   width: 100%;
   text-align: center;
+  line-height: 11px;
 }
 
 .footer a {
@@ -206,8 +207,8 @@ p {
 .navbar {
   z-index: 1;
   top: 20px;
-  left: 0;
-  right: 0;
+  padding: 0;
+  margin-bottom: 10px;
 }
 
 .navbar .navbar-toggler {
@@ -247,8 +248,10 @@ p {
   }
 }
 
-.navbar .navbar-collapse .navbar-nav .nav-item.empty {
-  margin: 0 180px;
+@media (min-width: 992px) {
+  .navbar .navbar-collapse .navbar-nav .nav-item.empty {
+    margin: 0 180px;
+  }
 }
 
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
@@ -283,6 +286,8 @@ p {
   font-size: 40px;
   font-weight: 900;
   text-transform: uppercase;
+  line-height: 40px;
+  margin: 10px 0;
 }
 
 .landing .cures-de-choc span {
