@@ -204,6 +204,69 @@ p {
   width: 280px;
 }
 
+.tips {
+  border: none;
+  background-color: #562a1c;
+  color: white;
+  width: 17px;
+  height: 17px;
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 11px;
+  position: relative;
+  left: 5px;
+  padding: 0;
+  text-align: center;
+}
+
+.modal .modal-dialog {
+  max-width: 775px;
+}
+
+@media (max-width: 992px) {
+  .modal .modal-dialog {
+    margin: 30px;
+  }
+}
+
+.modal .modal-dialog .modal-content {
+  padding: 0 15px;
+}
+
+.modal .modal-dialog .modal-content .close {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: white;
+  background-color: #f9bc16;
+  opacity: 1;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  position: absolute;
+  top: -17px;
+  right: -17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal .modal-dialog .modal-content h2 {
+  color: #562a1c;
+  font-weight: 800;
+  margin: 30px 0 0 0;
+}
+
+.modal .modal-dialog .modal-content .img img {
+  position: relative;
+  top: -20px;
+}
+
 .navbar {
   top: 20px;
   padding: 0;
@@ -401,6 +464,16 @@ p {
 
 .explications .slider-controls img:focus {
   outline: none;
+}
+
+.explications .tips {
+  top: 11px;
+  left: 8px;
+}
+
+.explications .tips span {
+  position: relative;
+  top: 1px;
 }
 
 .choix .choco-mood {
@@ -737,67 +810,7 @@ p {
 }
 
 .formulaire .tips {
-  border: none;
-  background-color: #562a1c;
-  color: white;
-  width: 17px;
-  height: 17px;
-  border-radius: 20px;
-  display: inline-block;
-  font-size: 11px;
-  position: relative;
   bottom: 4px;
-  left: 5px;
-  padding: 0;
-  text-align: center;
-}
-
-.formulaire .modal .modal-dialog {
-  max-width: 775px;
-}
-
-@media (max-width: 992px) {
-  .formulaire .modal .modal-dialog {
-    margin: 30px;
-  }
-}
-
-.formulaire .modal .modal-dialog .modal-content {
-  padding: 0 15px;
-}
-
-.formulaire .modal .modal-dialog .modal-content .close {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  color: white;
-  background-color: #f9bc16;
-  opacity: 1;
-  width: 40px;
-  height: 40px;
-  border-radius: 40px;
-  position: absolute;
-  top: -17px;
-  right: -17px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.formulaire .modal .modal-dialog .modal-content h2 {
-  color: #562a1c;
-  font-weight: 800;
-  margin: 30px 0 0 0;
-}
-
-.formulaire .modal .modal-dialog .modal-content .img img {
-  position: relative;
-  top: -20px;
 }
 
 .gagne h1 {

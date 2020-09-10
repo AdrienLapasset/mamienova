@@ -62,6 +62,7 @@
 
       </p>
       <div class="explications__etapes">
+
         <div class="d-flex justify-content-center mb-0">
           <span class="explications__etapes__numero">1</span>
           <p>Achetez simultanément<br>
@@ -71,6 +72,7 @@
           porteurs de l’offre en magasin<br>
           (voir la liste ci-dessous)
         </p>
+
         <div class="slider">
           <img src="/assets/imgs/POT COEUR LIEGEOIS.png" alt="">
           <img src="/assets/imgs/POT CREME BANANE CHOCOLAT.png" alt="">
@@ -82,14 +84,32 @@
           <img src="/assets/icons/chevron-left.png" alt="">
           <img src="/assets/icons/chevron-right.png" alt="">
         </div>
+
         <div class="d-flex justify-content-center mb-0">
           <span class="explications__etapes__numero">2</span>
           <p>Renseignez les codes</p>
+          <button type="button" class="tips" data-toggle="modal" data-target="#infoModal"><span>?</span></button>
         </div>
         <p class="small">
           imprimés au verso de chacun<br>
           des deux packs
         </p>
+
+        <!-- Modal -->
+        <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModal" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <img src="/assets/icons/close.png" alt="">
+              </button>
+              <h2>OÙ TROUVEZ MES CODES&nbsp;?</h2>
+              <div class="img">
+                <img src="/assets/imgs/trouvez-codes.png" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="d-flex justify-content-center mb-1">
           <span class="explications__etapes__numero">3</span>
           <p>Je découvre</p>
@@ -97,6 +117,7 @@
         <p class="small">
           si j’ai gagné&nbsp;!
         </p>
+
       </div>
       <a href="explications.html" class="btn btn-primary">Participez</a>
       <p class="a-hauteur">*à hauteur de 80€ maximum.</p>
