@@ -437,7 +437,7 @@ p {
 }
 
 .explications .tns-outer {
-  width: 226px;
+  width: 255px;
   -webkit-transform: translateX(30px);
           transform: translateX(30px);
 }
