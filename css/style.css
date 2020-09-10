@@ -205,7 +205,6 @@ p {
 }
 
 .navbar {
-  z-index: 1;
   top: 20px;
   padding: 0;
   margin-bottom: 10px;
