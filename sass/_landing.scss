@@ -10,10 +10,17 @@
     text-align: center;
     padding: 10px;
     transform: rotate(-2deg);
+    position: relative;
+    img {
+      position: absolute;
+      top: -40px;
+      right: -80px;
+    }
   }
   .cures-de-choc {
     color: #6a2505;
-    font-size: 40px;
+    letter-spacing: -2px;
+    font-size: 45px;
     font-weight: 900;
     text-transform: uppercase;
     line-height: 40px;

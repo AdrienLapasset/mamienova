@@ -2,7 +2,6 @@ $(document).ready(function () {
 
   var slider = tns({
     container: '.slider',
-    // autoWidth: true,
     fixedWidth: 200,
     controlsContainer: ".slider-controls",
     mouseDrag: true,
