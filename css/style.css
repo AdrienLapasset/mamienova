@@ -110,8 +110,13 @@ p {
 .footer {
   margin-top: 100px;
   width: 100%;
-  text-align: center;
   line-height: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer a {
@@ -435,7 +440,7 @@ p {
 
 .explications .a-hauteur {
   color: white;
-  margin: 30px 0 10px 0;
+  margin: 30px 0 20px 0;
   font-size: 11px;
 }
 
