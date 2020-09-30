@@ -13,15 +13,17 @@
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 10px;
+    position: relative;
     cursor: pointer;
     font-size: 22px;
     user-select: none;
     input {
+      left: 0;
       position: absolute;
       opacity: 0;
       cursor: pointer;
-      height: 0;
-      width: 0;
+      height: 100%;
+      width: 100%;
     }
     img {
       width: 175px;

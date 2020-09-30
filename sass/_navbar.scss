@@ -1,7 +1,12 @@
 .navbar {
   top: 20px;
+  left: 0;
+  right: 0;
   padding: 0;
   margin-bottom: 10px;
+  @media (min-width: 992px) {
+    position: absolute;
+  }
   .navbar-toggler {
     border: none;
     &:focus {
@@ -34,8 +39,5 @@
         }
       }
     }
-  }
-  @media (min-width: 992px) {
-    position: absolute;
   }
 }
